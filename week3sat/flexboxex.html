@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FlexBox Excersise</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            header {
+                position: absolute;
+                top:0px;
+                background-color: blue;
+                width:100%;
+                height:5%;
+                text-align: center;
+                font-size: 1.2em;
+            }
+            footer {
+                position: absolute;
+                bottom:0px;
+                background-color: purple;
+                width:100%;
+                height:5%;
+                text-align: center;
+                font-size: 1.2em;
+            }
+            .wrapper {
+                padding-top: 50px;
+                display: flex;
+            }
+            .wrapper > div {
+                margin: 5px 10px 10px 10px;
+            }
+            .col1 {
+                width: 300px;
+                background-color: gray;
+            }
+            .col2 {
+                flex: 1;
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            Header
+        </header>
+        <div class = "wrapper">
+            <div class = "col1">Col1
+                <p>Porttitor leo a diam sollicitudin tempor id eu nisl nunc. Egestas sed tempus urna et pharetra pharetra massa massa ultricies. Imperdiet nulla malesuada pellentesque elit eget gravida cum sociis natoque</p>
+            </div>
+            <div class = "col2">Col2 <p>tis vulputate enim nulla aliquet porttitor lacus luctus. Justo nec ultctus. lectus quam id leo in vitae.</p>
+            </div>
+        </div>
+        <footer>
+            Footer
+        </footer>
+    </body>
+</html>
